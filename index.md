@@ -20,7 +20,7 @@ layout: default
 
     &emsp;In such a small department things are ever changing but 2 main responsibilities arose: 
     <ol>
-      <li>Develop solutions to issues presented by other departments, focusing on issues that could use a coding/dev solution using whatever language fit best; Python, C#, PowerShell, JS/HTML/CSS. As the goal of these projects generally were aimed at helping speed processes up or make something easier I strived to make the usability and maintainability as simple as possible. Keeping it simple helped the project outlive me as the users could use and maintain the project.</li>
+      <li>Develop solutions to issues presented by other departments, focusing on issues that could use a coding/dev solution using whatever language fit best; Python, C#, PowerShell, JS/HTML/CSS. As the goal of these projects generally were aimed at helping speed processes up or make something easier I strived to make the usability and maintainability as simple as possible. Keeping it simple helped the project outlive me as the users could use and maintain it.</li>
       <li>Be the go-to person for in-person troubleshooting on various helpdesk issues. With my experience helping <a href="#hudson-isd---it-technician">Teachers</a>, <a href="#deca-dental---it-technician">Dentists</a>, coaches, and more I learned how to work with all sorts of people and in all kinds of situations. All of that led to the skills of being effective in helping troubleshoot issues with people, even if I didn't know the answer right away.</li>
     </ol>
   </details>
