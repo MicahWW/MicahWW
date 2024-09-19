@@ -12,15 +12,15 @@ layout: default
 - Location:
   - Frisco, TX
 - Quick description
-  - Develop solutions that fit department needs and maintainability/longevity
+  - Develop solutions that fit department needs and maintainability/longevity.
   - Coordinate and assist other departments with tech needs.
-  - Primary point of contact for helpdesk related issues
-  - Plus everything [before title change](#dallas-stars---it-technician)
+  - Primary point of contact for helpdesk related issues.
+  - Plus everything [before title change](#dallas-stars---it-technician).
 - <details open><summary>{% octicon arrow-down-right height:16 %}Longer description</summary>
 
     &emsp;In such a small department things are ever changing but 2 main responsibilities arose: 
     <ol>
-      <li>Develop solutions to issues presented by other departments, focusing on issues that could use a coding/dev solution using whatever language fit best; Python, C#, PowerShell, JS/HTML/CSS. As the goal of these projects generally were aimed at helping speed processes up or make something easier I strived to make the usability and maintainability as simple as possible. Keeping it simple helped the project outlive me as the users could use and maintain the project.</li>
+      <li>Develop solutions to issues presented by other departments, focusing on issues that could use a coding/dev solution using whatever language fit best; Python, C#, PowerShell, JS/HTML/CSS. As the goal of these projects generally were aimed at helping speed processes up or make something easier I strived to make the usability and maintainability as simple as possible. Keeping it simple helped the project outlive me as the users could use and maintain it.</li>
       <li>Be the go-to person for in-person troubleshooting on various helpdesk issues. With my experience helping <a href="#hudson-isd---it-technician">Teachers</a>, <a href="#deca-dental---it-technician">Dentists</a>, coaches, and more I learned how to work with all sorts of people and in all kinds of situations. All of that led to the skills of being effective in helping troubleshoot issues with people, even if I didn't know the answer right away.</li>
     </ol>
   </details>
@@ -31,10 +31,10 @@ layout: default
 - Location:
   - Frisco, TX
 - Quick description
-  - Troubleshoot general software & hardware issues
-  - Teach basic software & hardware for new tech
-  - Live event support (Stars hockey games)
-  - Manage networks for events (tenant events)
+  - Troubleshoot general software & hardware issues.
+  - Teach basic software & hardware for new tech.
+  - Live event support (Stars hockey games).
+  - Manage networks for events (tenant events).
 - <details><summary>{% octicon arrow-down-right height:16 %}Longer description</summary>
 
     Day to day responsibilities include providing support & training for both on-site and remote employees on both sides of the company, normal business operations & hockey operations. This ranged from providing live event support during the team's games, managing network requests/management for events at our public centers when tenants rented the space out, and troubleshooting employee's hardware and software issues.
