@@ -16,7 +16,7 @@ layout: default
   - Coordinate and assist other departments with tech needs.
   - Primary point of contact for helpdesk related issues.
   - Plus everything [before title change](#dallas-stars---it-technician).
-- <details open><summary>{% octicon arrow-down-right height:16 %}Longer description</summary>
+- <details open style="cursor: pointer"><summary>{% octicon arrow-down-right height:16 %}Longer description</summary>
 
     &emsp;In such a small department things are ever changing but 2 main responsibilities arose: 
     <ol>
@@ -35,7 +35,7 @@ layout: default
   - Teach basic software & hardware for new tech.
   - Live event support (Stars hockey games).
   - Manage networks for events (tenant events).
-- <details><summary>{% octicon arrow-down-right height:16 %}Longer description</summary>
+- <details style="cursor: pointer"><summary>{% octicon arrow-down-right height:16 %}Longer description</summary>
 
     Day to day responsibilities include providing support & training for both on-site and remote employees on both sides of the company, normal business operations & hockey operations. This ranged from providing live event support during the team's games, managing network requests/management for events at our public centers when tenants rented the space out, and troubleshooting employee's hardware and software issues.
   </details>
@@ -45,7 +45,7 @@ layout: default
   - June 2021 - April 2022
 - Location:
   - Dallas, TX
-- <details><summary>{% octicon arrow-down-right height:16 %}Longer description</summary>
+- <details style="cursor: pointer"><summary>{% octicon arrow-down-right height:16 %}Longer description</summary>
 
   Provide remote technical support for offices across the country.
   </details>
@@ -56,7 +56,7 @@ layout: default
   - Winter college break 2019
 - Location:
   - Hudson, TX
-- <details><summary>{% octicon arrow-down-right height:16 %}Longer description</summary>
+- <details style="cursor: pointer"><summary>{% octicon arrow-down-right height:16 %}Longer description</summary>
 
   While teachers and students were present the primary responsibility was to assist teachers with any issues while allowing them to still teach but once they left for the summer the project became replacing an entire campus worth of desktops and laptops (each campus had around 300 desktops & 300 laptops) with brand new equipment and then moving the old equipment to a different campus, giving them a slight upgrade. To do this all machines needed to be wiped before moving, setup cleanly in the new location, and software refreshed (each room could have different software suites).
   </details>
