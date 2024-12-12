@@ -4,6 +4,12 @@
 
 layout: default
 ---
+# External links about me
+- LinkedIn
+  - [micahww.com/linkedin](https://www.micahww.com/linkedin)
+- GitHub
+  - [micahww.com/github](https://www.micahww.com/github)
+
 # Resume
 ## Experience
 ### Dallas Stars - IT Support Coordinator
@@ -85,12 +91,14 @@ The below projects are all with the Dallas Stars
 ---
 ## Education
 ### Certifications
-- Azure Fundamentals
-- Azure Data Fundamentals Certified
-- Microsoft Security, Compliance, and Identity Fundamentals
+- [Azure Fundamentals - February 2023](https://learn.microsoft.com/api/credentials/share/en-us/MicahWarren-0739/AED80AAB1F055DF2?sharingId=1749CCE33D67EC39)
+- [Azure Data Fundamentals Certified - April 2023](https://learn.microsoft.com/api/credentials/share/en-us/MicahWarren-0739/A28CB1C7718C9B8A?sharingId=1749CCE33D67EC39)
+- [Microsoft Security, Compliance, and Identity Fundamentals - July 2024](https://learn.microsoft.com/api/credentials/share/en-us/MicahWarren-0739/FB6710CA830CCF70?sharingId=1749CCE33D67EC39)
+- [GitHub Foundations - August 2024](https://www.credly.com/badges/2639ef75-ff9e-44ef-9572-89c5389ec1c0)
 
 ### Degree
 - BS in Computer Engineering
+- Graduated spring of 2021
 - University of North Texas, Denton TX
 - Senior Design project
   - Private Cloud with IoT, a TSGS project sponsored by NASA.
