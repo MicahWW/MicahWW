@@ -12,17 +12,25 @@ layout: default
 
 # Resume
 ## Experience
+### Dallas Stars - Cloud Engineer
+- Time frame:
+  - January 2025 - Present
+- Quick description
+  - Maintain and overhaul existing cloud infrastructure.
+  - Develop cloud infrastructure solutions in Azure for IT, BI, etc.
+  - Automate repetitive buiness processes.
+  - Plus portions of my role before as [It Support Coordinator](#dallas-stars---it-support-coordinator)
 ### Dallas Stars - IT Support Coordinator
 - Time frame:
-  - July 2023 - present
+  - July 2023 - January 2025
 - Location:
   - Frisco, TX
 - Quick description
   - Develop solutions that fit department needs and maintainability/longevity.
   - Coordinate and assist other departments with tech needs.
   - Primary point of contact for helpdesk related issues.
-  - Plus everything [before title change](#dallas-stars---it-technician).
-- <details open style="cursor: pointer"><summary>{% octicon arrow-down-right height:16 %}Longer description</summary>
+  - Plus everything from my role as [IT Technician](#dallas-stars---it-technician).
+- <details style="cursor: pointer"><summary>{% octicon arrow-down-right height:16 %}Longer description</summary>
 
     &emsp;In such a small department things are ever changing but 2 main responsibilities arose: 
     <ol>
