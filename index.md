@@ -104,7 +104,11 @@ The below projects are all with the Dallas Stars
 - [Azure Data Fundamentals Certified - April 2023](https://learn.microsoft.com/api/credentials/share/en-us/MicahWarren-0739/A28CB1C7718C9B8A?sharingId=1749CCE33D67EC39)
 - [Microsoft Security, Compliance, and Identity Fundamentals - July 2024](https://learn.microsoft.com/api/credentials/share/en-us/MicahWarren-0739/FB6710CA830CCF70?sharingId=1749CCE33D67EC39)
 - [GitHub Foundations - August 2024](https://www.credly.com/badges/2639ef75-ff9e-44ef-9572-89c5389ec1c0)
-- [Microsoft Applied Skill: Power Automate](https://learn.microsoft.com/en-us/users/micahwarren-0739/credentials/40906ee5e7b3e366)
+
+### MS Applied Skills
+- [Create and manage automated processes by using Power Automate](https://learn.microsoft.com/en-us/users/micahwarren-0739/credentials/40906ee5e7b3e366)
+- [Develop an ASP.NET Core web app that consumes an API](https://learn.microsoft.com/en-us/users/micahwarren-0739/credentials/6d59ebe08d08b00)
+- [Get started with identities and access using Microsoft Entra](https://learn.microsoft.com/en-us/users/micahwarren-0739/credentials/b76cc1616b256dfd)
 
 ### Degree
 - BS in Computer Engineering
