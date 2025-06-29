@@ -6,9 +6,9 @@ layout: default
 ---
 # External links about me
 - LinkedIn
-  - [micahww.com/linkedin](https://www.micahww.com/linkedin)
+  - [micahww.com/linkedin](https://micahww.com/linkedin)
 - GitHub
-  - [micahww.com/github](https://www.micahww.com/github)
+  - [micahww.com/github](https://micahww.com/github)
 
 # Resume
 ## Experience
