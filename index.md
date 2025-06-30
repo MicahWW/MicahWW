@@ -18,7 +18,7 @@ layout: default
 - Quick description
   - Maintain and overhaul existing cloud infrastructure.
   - Develop cloud infrastructure solutions in Azure for IT, BI, etc.
-  - Automate repetitive buiness processes.
+  - Automate repetitive business processes.
   - Plus portions of my role before as [It Support Coordinator](#dallas-stars---it-support-coordinator)
 
 ### Dallas Stars - IT Support Coordinator
