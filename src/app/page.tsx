@@ -13,26 +13,26 @@ export default function Home() {
     const certifications: certificationModel[] = [
         new certificationModel(
             "Azure Fundamentals",
-            new Date("2023-02-21"),
+            new Date(2023, 1, 21),
             null,
             "https://learn.microsoft.com/api/credentials/share/en-us/MicahWarren-0739/AED80AAB1F055DF2?sharingId=1749CCE33D67EC39"
         ),
         new certificationModel(
             "Azure Data Fundamentals",
-            new Date("2023-04-28"),
+            new Date(2023, 3, 28),
             null,
             "https://learn.microsoft.com/api/credentials/share/en-us/MicahWarren-0739/A28CB1C7718C9B8A?sharingId=1749CCE33D67EC39"
         ),
         new certificationModel(
             "Microsoft Security, Compliance, and Identity Fundamentals",
-            new Date("2024-07-25"),
+            new Date(2024, 6, 25),
             null,
             "https://learn.microsoft.com/api/credentials/share/en-us/MicahWarren-0739/FB6710CA830CCF70?sharingId=1749CCE33D67EC39"
         ),
         new certificationModel(
             "GitHub Foundations",
-            new Date("2024-08-08"),
-            new Date("2027-08-08"),
+            new Date(2024, 7, 8),
+            new Date(2027, 7, 8),
             "https://www.credly.com/badges/2639ef75-ff9e-44ef-9572-89c5389ec1c0"
         )
     ];
@@ -40,26 +40,26 @@ export default function Home() {
     const msAppliedSkills: certificationModel[] = [
         new certificationModel(
             "Create and manage automated process by using Power Automate",
-            new Date("2024-12-16"),
+            new Date(2024, 11, 16),
             null,
             "https://learn.microsoft.com/en-us/users/micahwarren-0739/credentials/40906ee5e7b3e366"
         ),
         new certificationModel(
             "Develop an ASP.NET Core web app that consumes an API",
-            new Date("2025-05-19"),
+            new Date(2025, 4, 19),
             null,
             "https://learn.microsoft.com/en-us/users/micahwarren-0739/credentials/6d59ebe08d08b00"
         ),
         new certificationModel(
             "Get started with identities and access using Microsoft Entra",
-            new Date("2025-06-22"),
+            new Date(2025, 5, 22),
             null,
             "https://learn.microsoft.com/en-us/users/micahwarren-0739/credentials/b76cc1616b256dfd"
         )
     ];
 
     const degree = new degreeModel(
-        new Date("2021-05-01"),
+        new Date(2021, 4, 1),
         "University of North Texas",
         "Denton, TX",
         "Bachelor of Science in Computer Engineering",
@@ -72,7 +72,7 @@ export default function Home() {
         new workExperienceModel(
             "Dallas Stars",
             "Cloud Engineer",
-            new Date("2025-01-01"),
+            new Date(2025, 0, 1),
             null,
             [
                 "Maintain and overhaul existing cloud infrastructure.",
@@ -86,8 +86,8 @@ export default function Home() {
         new workExperienceModel(
             "Dallas Stars",
             "IT Support Coordinator",
-            new Date("2022-07-01"),
-            new Date("2024-12-31"),
+            new Date(2022, 6, 1),
+            new Date(2024, 11, 31),
             [
                 "Develop solutions that fit department needs and maintainability/longevity.",
                 "Coordinate and assist other departments with tech needs.",
@@ -102,8 +102,8 @@ Be the go-to person for in-person troubleshooting on various helpdesk issues. Wi
         new workExperienceModel(
             "Dallas Stars",
             "IT Technician",
-            new Date("2022-04-25"),
-            new Date("2023-06-30"),
+            new Date(2022, 3, 25),
+            new Date(2023, 5, 30),
             [
                 "Troubleshoot general software & hardware issues.",
                 "Teach basic software & hardware for new tech.",
@@ -116,8 +116,8 @@ Be the go-to person for in-person troubleshooting on various helpdesk issues. Wi
         new workExperienceModel(
             "DECA Dental",
             "IT Technician",
-            new Date("2021-06-07"),
-            new Date("2022-04-22"),
+            new Date(2021, 5, 7),
+            new Date(2022, 3, 22),
             [
                 "Troubleshoot general software & hardware issue remotely and in person.",
                 "Teach basic software & hardware troubleshooting to office staff."
