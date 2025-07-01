@@ -1,5 +1,4 @@
 import workExperienceModel from '@/models/resume/workExperienceModel';
-import styles from "@/styles/resume.module.css";
 
 type workExperienceProps = {
     workExperience: workExperienceModel;
@@ -8,7 +7,7 @@ type workExperienceProps = {
 const WorkExperience = ({ workExperience }: workExperienceProps) => {
     return (
         <div>
-            <span className={styles.itemHeader}>{workExperience.jobTitle} - {workExperience.companyName}</span>
+            <span className="item-header">{workExperience.jobTitle} - {workExperience.companyName}</span>
             <span> {workExperience.startDateString()} - {workExperience.endDateString()}</span>
             <div>Quick description:</div>
             <ul>

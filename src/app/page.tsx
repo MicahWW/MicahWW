@@ -4,10 +4,10 @@ import Degree from "@/components/resume/Degree";
 import degreeModel from "@/models/resume/degreeModel";
 import workExperienceModel from "@/models/resume/workExperienceModel";
 import WorkExperience from "@/components/resume/WorkExperience";
-import styles from "@/styles/resume.module.css";
 import skillModel from "@/models/resume/skillModel";
 import projectModel from "@/models/resume/projectModel";
 import Project from "@/components/resume/Project";
+import "@/styles/resume.css";
 
 export default function Home() {
     const certifications: certificationModel[] = [
@@ -207,15 +207,19 @@ Be the go-to person for in-person troubleshooting on various helpdesk issues. Wi
 
     return (
         <>
-            <div id="work-experience">
-                <div className={styles.itemGroupHeader}>Work Experience</div>
+            <div id="workExperience">
+                <div className="item-group-header linkable-header">
+                    <a href="#workExperience" className="link-icon">🔗</a><span>Work Experience</span>
+                </div>
                 {workExperiences.map((workExperience) => (
                         <WorkExperience key={`${workExperience.companyName}-${workExperience.jobTitle}`} workExperience={workExperience} />
                 ))}
             </div>
             <hr />
             <div id="projects">
-                <div className={styles.itemGroupHeader}>Projects</div>
+                <div className="item-group-header linkable-header">
+                    <a href="#projects" className="link-icon">🔗</a><span>Projects</span>
+                </div>
                 {projects.map((project) => (
                     <div key={`project-${project.title}`}>
                         <Project project={project} />
@@ -224,14 +228,16 @@ Be the go-to person for in-person troubleshooting on various helpdesk issues. Wi
             </div>
             <hr />
             <div id="education">
-                <div className={styles.itemGroupHeader}>Education</div>
-                <div className={styles.itemHeader}>Certifications</div>
+                <div className="item-group-header linkable-header">
+                    <a href="#education" className="link-icon">🔗</a><span>Education</span>
+                </div>
+                <div className="item-header">Certifications</div>
                 <ul>
                     {certifications.map((cert) => (
                         <li key={`bullet-${cert.name}`}><Certification key={cert.name} cert={cert} /></li>
                     ))}
                 </ul>
-                <div className={styles.itemHeader}>Microsoft Applied Skills</div>
+                <div className="item-header">Microsoft Applied Skills</div>
                 <ul>
                     {msAppliedSkills.map((cert) => (
                         <li key={`bullet-${cert.name}`}><Certification key={cert.name} cert={cert} /></li>
@@ -241,14 +247,16 @@ Be the go-to person for in-person troubleshooting on various helpdesk issues. Wi
             </div>
             <hr />
             <div id="skills">
-                <div className={styles.itemGroupHeader}>Skills</div>
-                <div className={styles.itemHeader}>Programming Related</div>
+                <div className="item-group-header linkable-header">
+                    <a href="#skills" className="link-icon">🔗</a><span>Skills</span>
+                </div>
+                <div className="item-header">Programming Related</div>
                 <ul>
                     {skills.filter(skill => skill.type === "programming").map((skill) => (
                         <li key={`bullet-${skill.name}`}>{skill.name}</li>
                     ))}
                 </ul>
-                <div className={styles.itemHeader}>Other</div>
+                <div className="item-header">Other</div>
                 <ul>
                     {skills.filter(skill => skill.type === "other").map((skill) => (
                         <li key={`bullet-${skill.name}`}>{skill.name}</li>
