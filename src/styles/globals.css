@@ -1,0 +1,54 @@
+:root {
+    --dark: #2e2e2e;
+    --primary: #00843d;
+    --secondary: #8F8F8C;
+    --navbar-height: 50px;
+    --footer-height: var(--navbar-height);
+}
+
+body {
+    background-color: var(--dark);
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    padding-inline: 15px;
+    max-width: 1200px;
+    margin: auto;
+    flex: 1;
+}
+
+main a:link,
+footer a:link {
+    color: white;
+    text-decoration: underline;
+}
+
+main a:visited,
+footer a:visited {
+    color: var(--secondary);
+}
+
+main a:hover,
+footer a:hover {
+    color: var(--primary);
+}
+
+main a:active,
+footer a:active {
+    color: var(--primary);
+}
+
+#page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - var(--navbar-height));
+    padding-top: var(--navbar-height);
+}
+
+ul {
+    margin-inline: 0px;
+    margin-block: 0.5rem;
+}

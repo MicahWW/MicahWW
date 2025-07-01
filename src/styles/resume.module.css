@@ -1,0 +1,15 @@
+.itemGroupHeader {
+    font-size: 1.65rem;
+    font-weight: bold;
+    color: var(--primary);
+    margin-top: 1.5rem;
+    margin-bottom : 0.5rem;
+}
+
+.itemHeader {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--primary);
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+}
