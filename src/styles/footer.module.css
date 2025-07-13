@@ -1,0 +1,8 @@
+.footer {
+    height: var(--footer-height);
+    max-width: 100%;
+    text-align: center;
+    padding-top: 2rem;
+    padding-inline: 15px;
+    border-top: 2px solid var(--secondary);
+}
