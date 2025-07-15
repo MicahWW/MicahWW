@@ -14,7 +14,7 @@ body {
 }
 
 main {
-    padding-inline: 15px;
+    padding-inline: 2rem;
     max-width: 1200px;
     margin: auto;
     flex: 1;
