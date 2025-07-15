@@ -16,19 +16,19 @@ export default function Home() {
             "Azure Fundamentals",
             new Date(2023, 1, 21),
             null,
-            "https://learn.microsoft.com/api/credentials/share/en-us/MicahWarren-0739/AED80AAB1F055DF2?sharingId=1749CCE33D67EC39"
+            "https://learn.microsoft.com/api/credentials/share/en-us/micah-w-warren/AED80AAB1F055DF2?sharingId=1749CCE33D67EC39"
         ),
         new certificationModel(
             "Azure Data Fundamentals",
             new Date(2023, 3, 28),
             null,
-            "https://learn.microsoft.com/api/credentials/share/en-us/MicahWarren-0739/A28CB1C7718C9B8A?sharingId=1749CCE33D67EC39"
+            "https://learn.microsoft.com/api/credentials/share/en-us/micah-w-warren/A28CB1C7718C9B8A?sharingId=1749CCE33D67EC39"
         ),
         new certificationModel(
             "Microsoft Security, Compliance, and Identity Fundamentals",
             new Date(2024, 6, 25),
             null,
-            "https://learn.microsoft.com/api/credentials/share/en-us/MicahWarren-0739/FB6710CA830CCF70?sharingId=1749CCE33D67EC39"
+            "https://learn.microsoft.com/api/credentials/share/en-us/micah-w-warren/FB6710CA830CCF70?sharingId=1749CCE33D67EC39"
         ),
         new certificationModel(
             "GitHub Foundations",
@@ -43,19 +43,19 @@ export default function Home() {
             "Create and manage automated process by using Power Automate",
             new Date(2024, 11, 16),
             null,
-            "https://learn.microsoft.com/en-us/users/micahwarren-0739/credentials/40906ee5e7b3e366"
+            "https://learn.microsoft.com/en-us/users/micah-w-warren/credentials/40906ee5e7b3e366"
         ),
         new certificationModel(
             "Develop an ASP.NET Core web app that consumes an API",
             new Date(2025, 4, 19),
             null,
-            "https://learn.microsoft.com/en-us/users/micahwarren-0739/credentials/6d59ebe08d08b00"
+            "https://learn.microsoft.com/en-us/users/micah-w-warren/credentials/6d59ebe08d08b00"
         ),
         new certificationModel(
             "Get started with identities and access using Microsoft Entra",
             new Date(2025, 5, 22),
             null,
-            "https://learn.microsoft.com/en-us/users/micahwarren-0739/credentials/b76cc1616b256dfd"
+            "https://learn.microsoft.com/en-us/users/micah-w-warren/credentials/b76cc1616b256dfd"
         )
     ];
 
