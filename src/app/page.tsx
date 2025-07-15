@@ -8,6 +8,7 @@ import skillModel from "@/models/resume/skillModel";
 import projectModel from "@/models/resume/projectModel";
 import Project from "@/components/resume/Project";
 import "@/styles/resume.css";
+import LinkableHeader from "@/components/LinkableHeader";
 
 export default function Home() {
     const certifications: certificationModel[] = [
@@ -208,18 +209,14 @@ Be the go-to person for in-person troubleshooting on various helpdesk issues. Wi
     return (
         <>
             <div id="workExperience">
-                <a href="#workExperience" className="item-group-header linkable-header">
-                    <div className="link-icon">🔗</div><span>Work Experience</span>
-                </a>
+                <LinkableHeader id="workExperience" title="Work Experience" />
                 {workExperiences.map((workExperience) => (
                         <WorkExperience key={`${workExperience.companyName}-${workExperience.jobTitle}`} workExperience={workExperience} />
                 ))}
             </div>
             <hr />
             <div id="projects">
-                <a href="#projects" className="item-group-header linkable-header">
-                    <a className="link-icon">🔗</a><span>Projects</span>
-                </a>
+                <LinkableHeader id="projects" title="Projects" />
                 {projects.map((project) => (
                     <div key={`project-${project.title}`}>
                         <Project project={project} />
@@ -228,9 +225,7 @@ Be the go-to person for in-person troubleshooting on various helpdesk issues. Wi
             </div>
             <hr />
             <div id="education">
-                <a href="#education" className="item-group-header linkable-header">
-                    <div className="link-icon">🔗</div><span>Education</span>
-                </a>
+                <LinkableHeader id="education" title="Education" />
                 <div className="item-header">Certifications</div>
                 <ul>
                     {certifications.map((cert) => (
@@ -247,9 +242,7 @@ Be the go-to person for in-person troubleshooting on various helpdesk issues. Wi
             </div>
             <hr />
             <div id="skills">
-                <a href="#skills" className="item-group-header linkable-header">
-                    <div className="link-icon">🔗</div><span>Skills</span>
-                </a>
+                <LinkableHeader id="skills" title="Skills" />
                 <div className="item-header">Programming Related</div>
                 <ul>
                     {skills.filter(skill => skill.type === "programming").map((skill) => (
