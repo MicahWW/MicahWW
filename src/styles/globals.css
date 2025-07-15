@@ -21,7 +21,7 @@ main {
 }
 
 main * {
-    scroll-margin-block-start: var(--navbar-height);
+    scroll-margin-block-start: calc(var(--navbar-height) + 1.5rem);
 }
 
 main a:link,
