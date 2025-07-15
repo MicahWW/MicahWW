@@ -1,11 +1,3 @@
-.item-group-header {
-    font-size: 1.65rem;
-    font-weight: bold;
-    color: var(--primary);
-    margin-top: 1.5rem;
-    margin-bottom : 0.5rem;
-}
-
 .item-header {
     font-size: 1.25rem;
     font-weight: bold;
@@ -17,34 +9,4 @@
 ul {
     margin-inline: 0px;
     margin-block: 0.5rem;
-}
-
-.link-icon {
-    opacity: 0%;
-    transition: opacity 0.2s ease;
-    /* Move it left and keep the text lined up correctly */
-    width: 1.25rem;
-    height: 0.75rem;
-    font-size: 0.75rem;
-    margin: -1.25rem;
-    padding-right: 1.25rem;
-}
-
-.linkable-header {
-    display: flex;
-    align-items: center;
-    padding-left: -1.25rem;
-}
-
-.linkable-header:hover .link-icon {
-    opacity: 100%;
-}
-
-/* Override the default link styles for the link icon */
-.link-icon:link,
-.link-icon:visited,
-.link-icon:hover,
-.link-icon:active {
-    text-decoration: none;
-    color: #000000;
 }
