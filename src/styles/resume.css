@@ -41,10 +41,10 @@ ul {
 }
 
 /* Override the default link styles for the link icon */
-.link-icon:link,
-.link-icon:visited,
-.link-icon:hover,
-.link-icon:active {
+.linkable-header:link,
+.linkable-header:visited,
+.linkable-header:hover,
+.linkable-header:active {
     text-decoration: none;
-    color: #000000;
+    color: var(--primary);
 }

@@ -208,18 +208,18 @@ Be the go-to person for in-person troubleshooting on various helpdesk issues. Wi
     return (
         <>
             <div id="workExperience">
-                <div className="item-group-header linkable-header">
-                    <a href="#workExperience" className="link-icon">🔗</a><span>Work Experience</span>
-                </div>
+                <a href="#workExperience" className="item-group-header linkable-header">
+                    <div className="link-icon">🔗</div><span>Work Experience</span>
+                </a>
                 {workExperiences.map((workExperience) => (
                         <WorkExperience key={`${workExperience.companyName}-${workExperience.jobTitle}`} workExperience={workExperience} />
                 ))}
             </div>
             <hr />
             <div id="projects">
-                <div className="item-group-header linkable-header">
-                    <a href="#projects" className="link-icon">🔗</a><span>Projects</span>
-                </div>
+                <a href="#projects" className="item-group-header linkable-header">
+                    <a className="link-icon">🔗</a><span>Projects</span>
+                </a>
                 {projects.map((project) => (
                     <div key={`project-${project.title}`}>
                         <Project project={project} />
@@ -228,9 +228,9 @@ Be the go-to person for in-person troubleshooting on various helpdesk issues. Wi
             </div>
             <hr />
             <div id="education">
-                <div className="item-group-header linkable-header">
-                    <a href="#education" className="link-icon">🔗</a><span>Education</span>
-                </div>
+                <a href="#education" className="item-group-header linkable-header">
+                    <div className="link-icon">🔗</div><span>Education</span>
+                </a>
                 <div className="item-header">Certifications</div>
                 <ul>
                     {certifications.map((cert) => (
@@ -247,9 +247,9 @@ Be the go-to person for in-person troubleshooting on various helpdesk issues. Wi
             </div>
             <hr />
             <div id="skills">
-                <div className="item-group-header linkable-header">
-                    <a href="#skills" className="link-icon">🔗</a><span>Skills</span>
-                </div>
+                <a href="#skills" className="item-group-header linkable-header">
+                    <div className="link-icon">🔗</div><span>Skills</span>
+                </a>
                 <div className="item-header">Programming Related</div>
                 <ul>
                     {skills.filter(skill => skill.type === "programming").map((skill) => (
