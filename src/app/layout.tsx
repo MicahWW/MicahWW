@@ -22,6 +22,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" className={ubuntu.className}>
+            <head>
+                <link rel="icon" href="/favicon.png" />
+            </head>
             <body>
                 <Navbar />
                 <div id="page-wrapper">

@@ -1,0 +1,1 @@
+This project is meant for me to show off myself by displaying information about me and my ability to build this very repo. As such I prefer to work on this project by myself but if you notice something I should work on or fix please let me know by raising an issue.

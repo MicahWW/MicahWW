@@ -208,6 +208,10 @@ Be the go-to person for in-person troubleshooting on various helpdesk issues. Wi
 
     return (
         <>
+            <div id="overview">
+                <LinkableHeader id="welcome" title="Welcome to my page!" />
+                <p>Below you will find my previous <a href="#workExperience">Work Experience</a>, <a href="#projects">Projects</a>, <a href="#education">Education</a>, and <a href="#skills">Skills</a>. Above to will find links to some of my external profiles and the source code to this page.</p>
+            </div>
             <div id="workExperience">
                 <LinkableHeader id="workExperience" title="Work Experience" />
                 {workExperiences.map((workExperience) => (
