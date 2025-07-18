@@ -46,6 +46,7 @@ footer a:active {
 }
 
 #page-wrapper {
+    /* This keeps the footer at the bottom of the page when there is not enough content. */
     display: flex;
     flex-direction: column;
     min-height: calc(100vh - var(--navbar-height));
