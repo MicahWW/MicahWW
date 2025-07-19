@@ -17,6 +17,13 @@ jobs:
       id-token: write #This is required for requesting the JWT
 
     steps:
+      - name: Login to Azure
+        uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.AZURE_CLIENTID }}
+          tenant-id: ${{ secrets.AZURE_TENANTID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTIONID }}
+
       - uses: actions/checkout@v4
 
       - name: Set up Node.js version
@@ -32,14 +39,6 @@ jobs:
 
       - name: Zip artifact for deployment
         run: zip -r release.zip .
-
-      - name: Login to Azure
-        uses: azure/login@v2
-        with:
-          client-id: ${{ secrets.AZURE_CLIENTID }}
-          tenant-id: ${{ secrets.AZURE_TENANTID }}
-          subscription-id: ${{ secrets.AZURE_SUBSCRIPTIONID }}
-          auth-type: 'IDENTITY'
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
