@@ -11,6 +11,7 @@ on:
 jobs:
   main:
     runs-on: ubuntu-latest
+    environment: production_deploy
     permissions:
       contents: read #This is required for actions/checkout
       id-token: write #This is required for requesting the JWT
