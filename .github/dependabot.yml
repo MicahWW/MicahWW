@@ -9,15 +9,15 @@ updates:
   - package-ecosystem: "devcontainers"
     directory: "/"
     schedule:
-      interval: weekly
+      interval: monthly
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: weekly
+      interval: monthly
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: weekly
+      interval: monthly
     groups:
       next:
         applies-to: version-updates
