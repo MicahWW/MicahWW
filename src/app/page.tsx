@@ -40,6 +40,12 @@ export default function Home() {
 
     const msAppliedSkills: certificationModel[] = [
         new certificationModel(
+            "Deploy cloud-native apps using Azure Container Apps",
+            new Date(2025, 10, 20),
+            null,
+            "https://learn.microsoft.com/en-us/users/micah-w-warren/credentials/b2ffe89d61533770"
+        ),
+        new certificationModel(
             "Create and manage automated process by using Power Automate",
             new Date(2024, 11, 16),
             null,
