@@ -6,7 +6,7 @@ permissions:
   contents: write # required for pushing tags & publishing releases
 
 jobs:
-  test:
+  CalVer-Creation:
     runs-on: ubuntu-latest
 
     steps:
