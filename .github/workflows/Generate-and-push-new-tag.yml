@@ -1,0 +1,20 @@
+name: Generate and push new tag
+
+on:
+  workflow_dispatch:
+permissions:
+  contents: write # required for pushing tags & publishing releases
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Publish release and tag
+        uses: MicahWW/CalVer-Creation@v1
+        with:
+          set_build_metadata: 'false'
+          timezone: 'America/Chicago'
+          push_tag: 'true'
+          publish_release: 'true'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
