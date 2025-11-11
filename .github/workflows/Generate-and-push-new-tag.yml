@@ -28,3 +28,4 @@ jobs:
     uses: ./.github/workflows/Azure-Build-and-Push.yml
     with:
       version_tag: ${{ needs.CalVer-Creation.outputs.version }}
+    secrets: inherit
