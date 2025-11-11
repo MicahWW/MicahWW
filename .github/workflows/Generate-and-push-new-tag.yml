@@ -8,6 +8,8 @@ permissions:
 jobs:
   CalVer-Creation:
     runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.publish_release_and_tag.outputs.new_version }}
 
     steps:
       - name: Publish release and tag
@@ -20,7 +22,8 @@ jobs:
           publish_release: 'true'
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Build and Push
-        uses: ./.github/workflows/Azure-Build-and-Push.yml
-        with:
-          version_tag: ${{ steps.publish_release_and_tag.outputs.new_version }}
+  build-and-deploy:
+    needs: CalVer-Creation
+    uses: ./.github/workflows/Azure-Build-and-Push.yml
+    with:
+      version_tag: ${{ needs.CalVer-Creation.outputs.version }}
