@@ -1,0 +1,46 @@
+name: Pull request testing
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  install-and-build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v5
+
+    - name: Setup Node.js version
+      uses: actions/setup-node@v6
+      with:
+        node-version: '22.x'
+
+    # running npm clean-install ensures that package-lock and package match
+    - name: Install and check package & package-lock
+      run: npm clean-install
+
+    - name: Linting
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        npm run lint | tee eslint-output.txt
+        exit_code=${PIPESTATUS[0]}
+
+        gh pr comment ${{ github.event.pull_request.number }} --body "$(cat <<EOF
+        ## ESLint Report
+        \`\`\`
+        $(cat eslint-output.txt)
+        \`\`\`
+        EOF
+        )"
+
+        exit $exit_code
+
+    - name: Build
+      run: npm run build
