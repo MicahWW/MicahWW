@@ -4,9 +4,11 @@
 name: Azure Build and Push
 
 on:
-  push:
-    tags:
-      - '*'
+  workflow_call:
+    inputs:
+      version_tag:
+        required: true
+        type: string
 
 jobs:
   main:
@@ -25,6 +27,8 @@ jobs:
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTIONID }}
 
       - uses: actions/checkout@v5
+        with:
+          ref: ${{ inputs.version_tag }}
 
       - name: Set up Node.js version
         uses: actions/setup-node@v6

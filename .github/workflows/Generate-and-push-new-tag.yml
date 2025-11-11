@@ -11,6 +11,7 @@ jobs:
 
     steps:
       - name: Publish release and tag
+        id: publish_release_and_tag
         uses: MicahWW/CalVer-Creation@v1
         with:
           set_build_metadata: 'false'
@@ -18,3 +19,8 @@ jobs:
           push_tag: 'true'
           publish_release: 'true'
           github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and Push
+        uses: ./.github/workflows/Azure-Build-and-Push.yml
+        with:
+          version_tag: ${{ steps.publish_release_and_tag.outputs.new_version }}
