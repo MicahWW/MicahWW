@@ -197,6 +197,22 @@ Be the go-to person for in-person troubleshooting on various helpdesk issues. Wi
                     "Reduced manual intervention and errors."
                 ]
             }
+        ),
+        new projectModel(
+            "GitHub Action for version tagging & releasing",
+            "I created, and published, a GitHub Action that automates the process of generating a new version tag based of the date and using it while, pushing a git tag, and publishing a GitHub release. This is helpful for projects that have that want versioning but have a rolling release cycle or and don't want to think about version numbers.",
+            "Personal & Open Source",
+            {
+                "Technologies Used": [
+                    "GitHub Actions",
+                    "Python"
+                ],
+                "Key Features": [
+                    "Automates version tagging and release creation.",
+                    "Streamlines deployment workflow.",
+                    "Supports rolling release cycles."
+                ]
+            }
         )
     ];
 
