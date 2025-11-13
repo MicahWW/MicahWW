@@ -62,6 +62,12 @@ export default function Home() {
             new Date(2025, 5, 22),
             null,
             "https://learn.microsoft.com/en-us/users/micah-w-warren/credentials/b76cc1616b256dfd"
+        ),
+        new certificationModel(
+            "Get started with Azure management tasks",
+            new Date(2025, 11, 12),
+            null,
+            "https://learn.microsoft.com/en-us/users/micah-w-warren/credentials/e6efa0a83137e634"
         )
     ];
 
