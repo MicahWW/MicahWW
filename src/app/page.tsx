@@ -62,6 +62,12 @@ export default function Home() {
             new Date(2025, 5, 22),
             null,
             "https://learn.microsoft.com/en-us/users/micah-w-warren/credentials/b76cc1616b256dfd"
+        ),
+        new certificationModel(
+            "Get started with Azure management tasks",
+            new Date(2025, 11, 12),
+            null,
+            "https://learn.microsoft.com/en-us/users/micah-w-warren/credentials/e6efa0a83137e634"
         )
     ];
 
@@ -189,6 +195,22 @@ Be the go-to person for in-person troubleshooting on various helpdesk issues. Wi
                 "Key Features": [
                     "Automated network management for events.",
                     "Reduced manual intervention and errors."
+                ]
+            }
+        ),
+        new projectModel(
+            "GitHub Action for version tagging & releasing",
+            "I created, and published, a GitHub Action that automates the process of generating a new version tag based of the date and using it while, pushing a git tag, and publishing a GitHub release. This is helpful for projects that have that want versioning but have a rolling release cycle or and don't want to think about version numbers.",
+            "Personal & Open Source",
+            {
+                "Technologies Used": [
+                    "GitHub Actions",
+                    "Python"
+                ],
+                "Key Features": [
+                    "Automates version tagging and release creation.",
+                    "Streamlines deployment workflow.",
+                    "Supports rolling release cycles."
                 ]
             }
         )
