@@ -18,6 +18,14 @@ updates:
     directory: /
     schedule:
       interval: monthly
+    ignore:
+      - dependency-name: next
+        update-types: [version-update:semver-major]
+      - dependency-name: eslint-config-next
+        update-types: [version-update:semver-major]
+      - dependency-name: '@types/node'
+        versions:
+          - '26.x'
     groups:
       next:
         patterns:
