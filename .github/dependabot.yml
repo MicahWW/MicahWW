@@ -20,15 +20,9 @@ updates:
       interval: monthly
     groups:
       next:
-        applies-to: version-updates
         patterns:
           - next
           - eslint-config-next
       react:
-        applies-to: version-updates
         patterns:
           - '@types/react*'
-        update-types:
-          - patch
-          - minor
-        
