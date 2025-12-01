@@ -25,4 +25,7 @@ updates:
           - eslint-config-next
       react:
         patterns:
-          - '@types/react*'
+          - react
+          - react-dom
+          - '@types/react'
+          - '@types/react-dom'
