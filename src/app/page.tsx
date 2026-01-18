@@ -109,7 +109,7 @@ export default function Home() {
             ],
             `In such a small department things are ever changing but 2 main responsibilities arose:
 Develop solutions to issues presented by other departments, focusing on issues that could use a coding/dev solution using whatever language fit best; Python, C#, PowerShell, JS/HTML/CSS. As the goal of these projects generally were aimed at helping speed processes up or make something easier I strived to make the usability and maintainability as simple as possible. Keeping it simple helped the project outlive me as the users could use and maintain it.
-Be the go-to person for in-person troubleshooting on various helpdesk issues. With my experience helping Teachers, Dentists, coaches, and more I learned how to work with all sorts of people and in all kinds of situations. All of that led to the skills of being effective in helping troubleshoot issues with people, even if I didn't know the answer right away.`,
+Be the go-to person for in-person troubleshooting on various helpdesk issues. With my experience helping Teachers, Dentists, coaches, and more I learned how to work with all sorts of people and in all kinds of situations. All of that led to the skills of being effective in helping troubleshoot issues with people, even if I did not know the answer right away.`,
             "Frisco, TX"
         ),
         new workExperienceModel(
@@ -200,7 +200,7 @@ Be the go-to person for in-person troubleshooting on various helpdesk issues. Wi
         ),
         new projectModel(
             "GitHub Action for version tagging & releasing",
-            "I created, and published, a GitHub Action that automates the process of generating a new version tag based of the date and using it while, pushing a git tag, and publishing a GitHub release. This is helpful for projects that have that want versioning but have a rolling release cycle or and don't want to think about version numbers.",
+            "I created and published, a GitHub Action that automates the process of generating a new version tag based on the date and uses it to 1) push a new git tag 2) and publish a GitHub release. This is helpful for projects that have, or want, versioning but have a rolling release cycle and and do not want to think about version numbers.",
             "Personal & Open Source",
             {
                 "Technologies Used": [
