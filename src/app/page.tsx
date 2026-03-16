@@ -35,6 +35,12 @@ export default function Home() {
             new Date(2024, 7, 8),
             new Date(2027, 7, 8),
             "https://www.credly.com/badges/2639ef75-ff9e-44ef-9572-89c5389ec1c0"
+        ),
+        new certificationModel(
+            "GitHub Actions",
+            new Date(2026, 2, 16),
+            new Date(2029, 2, 16),
+            "https://learn.microsoft.com/en-us/users/micah-w-warren/credentials/b1ce9c35ea3b4f69"
         )
     ];
 
@@ -68,6 +74,18 @@ export default function Home() {
             new Date(2025, 11, 12),
             null,
             "https://learn.microsoft.com/en-us/users/micah-w-warren/credentials/e6efa0a83137e634"
+        ),
+        new certificationModel(
+            "Get started with classes, properties, and methods in C#",
+            new Date(2026, 0, 18),
+            null,
+            "https://learn.microsoft.com/en-us/users/micah-w-warren/credentials/2394c229944addda"
+        ),
+        new certificationModel(
+            "Automate Azure Load Testing by using GitHub Actions",
+            new Date(2026, 2, 3),
+            null,
+            "https://learn.microsoft.com/en-us/users/micah-w-warren/credentials/d793f7d48aa88fb4"
         )
     ];
 
