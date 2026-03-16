@@ -16,19 +16,19 @@ export default function Home() {
             "Azure Fundamentals",
             new Date(2023, 1, 21),
             null,
-            "https://learn.microsoft.com/api/credentials/share/en-us/micah-w-warren/AED80AAB1F055DF2?sharingId=1749CCE33D67EC39"
+            "https://learn.microsoft.com/api/credentials/share/en-us/micah-w-warren/AED80AAB1F055DF2"
         ),
         new certificationModel(
             "Azure Data Fundamentals",
             new Date(2023, 3, 28),
             null,
-            "https://learn.microsoft.com/api/credentials/share/en-us/micah-w-warren/A28CB1C7718C9B8A?sharingId=1749CCE33D67EC39"
+            "https://learn.microsoft.com/api/credentials/share/en-us/micah-w-warren/A28CB1C7718C9B8A"
         ),
         new certificationModel(
             "Microsoft Security, Compliance, and Identity Fundamentals",
             new Date(2024, 6, 25),
             null,
-            "https://learn.microsoft.com/api/credentials/share/en-us/micah-w-warren/FB6710CA830CCF70?sharingId=1749CCE33D67EC39"
+            "https://learn.microsoft.com/api/credentials/share/en-us/micah-w-warren/FB6710CA830CCF70"
         ),
         new certificationModel(
             "GitHub Foundations",
