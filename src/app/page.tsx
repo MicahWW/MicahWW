@@ -86,6 +86,12 @@ export default function Home() {
             new Date(2026, 2, 3),
             null,
             "https://learn.microsoft.com/en-us/users/micah-w-warren/credentials/d793f7d48aa88fb4"
+        ),
+        new certificationModel(
+            "Get started with cloud security and monitoring tasks",
+            new Date(2026, 3, 13),
+            null,
+            "https://learn.microsoft.com/en-us/users/micah-w-warren/credentials/a244b2fa84735f6a"
         )
     ];
 
