@@ -19,7 +19,7 @@ jobs:
     - name: Setup Node.js version
       uses: actions/setup-node@v6
       with:
-        node-version: '22.x'
+        node-version-file: package.json
 
     # running npm clean-install ensures that package-lock and package match
     - name: Install and check package & package-lock
