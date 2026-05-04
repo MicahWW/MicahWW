@@ -92,6 +92,12 @@ export default function Home() {
             new Date(2026, 3, 13),
             null,
             "https://learn.microsoft.com/en-us/users/micah-w-warren/credentials/a244b2fa84735f6a"
+        ),
+        new certificationModel(
+            "Configure secure access to your workloads using Azure networking",
+            new Date(2026, 4, 3),
+            null,
+            "https://learn.microsoft.com/en-us/users/micah-w-warren/credentials/43f7bab6b0a5ebc"
         )
     ];
 
