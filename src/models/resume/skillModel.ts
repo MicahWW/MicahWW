@@ -1,10 +1,12 @@
 class skill {
     name: string;
-    type: "programming" | "other";
+    type: string;
+    icon?: string;
 
-    constructor(name: string, type: "programming" | "other") {
+    constructor(name: string, type: string, icon?: string) {
         this.name = name;
         this.type = type;
+        this.icon = icon;
     }
 }
 export default skill;

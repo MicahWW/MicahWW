@@ -248,21 +248,37 @@ Be the go-to person for in-person troubleshooting on various helpdesk issues. Wi
     ];
 
     const skills: skillModel[] = [
-        new skillModel("C#", "programming"),
-        new skillModel("SQL", "programming"),
-        new skillModel("PowerShell", "programming"),
         new skillModel("Python", "programming"),
-        new skillModel("C/C++", "programming"),
+        new skillModel("PowerShell", "programming"),
         new skillModel("Bash", "programming"),
-        new skillModel("JavaScript", "programming"),
-        new skillModel("HTML", "programming"),
-        new skillModel("CSS", "programming"),
+        new skillModel("Docker", "programming"),
+        new skillModel("SQL", "programming"),
+        new skillModel("C#", "programming"),
+        new skillModel("C/C++", "programming"),
+        new skillModel("JavaScript & TypeScript", "programming"),
+        new skillModel("HTML & CSS", "programming"),
+
+        new skillModel("Azure Functions Apps", "azure-service", "azure-function-apps.svg"),
+        new skillModel("Azure Static Web Apps", "azure-service", "azure-static-apps.svg"),
+        new skillModel("Azure Web Apps", "azure-service", "azure-app-services.svg"),
+        new skillModel("Azure Container Registries", "azure-service", "azure-container-registries.svg"),
+        new skillModel("Azure Virtual Networks", "azure-service", "azure-virtual-networks.svg"),
+        new skillModel("Microsoft Entra ID", "azure-service", "entra.svg"),
+        new skillModel("Many more Azure services...", "azure-service" ),
+        /* No need for over kill but some ideas:
+            Key vault
+            Azure Storage
+            Application Insights
+            Managed Identity
+            ...
+        */
+
         new skillModel("Adobe Creative Cloud Suite", "other"),
-        new skillModel("Azure", "other"),
-        new skillModel("Microsoft AD (on-prem)", "other"),
-        new skillModel("Microsoft Entra ID (cloud)", "other"),
         new skillModel("Office 365 Administration", "other"),
-        new skillModel("Microsoft Power Platform", "other")
+        new skillModel("Microsoft Intune", "other"),
+        new skillModel("Cisco Meraki", "other"),
+        new skillModel("Microsoft Power Platform", "other"),
+        new skillModel("Microsoft on-prem AD", "other")
     ];
 
     return (
@@ -315,6 +331,14 @@ Be the go-to person for in-person troubleshooting on various helpdesk issues. Wi
                         <div className={gStyles.itemHeader}>Programming Related</div>
                         <ul>
                             {skills.filter(skill => skill.type === "programming").map((skill) => (
+                                <Skill key={`bullet-${skill.name}`} skill={skill} />
+                            ))}
+                        </ul>
+                    </div>
+                    <div className={gStyles.itemContainer}>
+                        <div className={gStyles.itemHeader}>Azure Services</div>
+                        <ul>
+                            {skills.filter(skill => skill.type === "azure-service").map((skill) => (
                                 <Skill key={`bullet-${skill.name}`} skill={skill} />
                             ))}
                         </ul>
