@@ -1,4 +1,5 @@
 import degreeModel from '@/models/resume/degreeModel';
+import gStyles from '@/styles/global.module.css';
 
 type degreeProps = {
     degree: degreeModel;
@@ -6,8 +7,8 @@ type degreeProps = {
 
 const Degree = ({ degree }: degreeProps) => {
     return (
-        <div>
-            <div className="item-header">{degree.degreeName}</div>
+        <div className={gStyles.itemContainer}>
+            <div className={gStyles.itemHeader}>{degree.degreeName}</div>
             <ul>
                 <li>{degree.schoolName}, {degree.schoolLocation}</li>
                 <li>Graduated {degree.graduatedDateString()}</li>
