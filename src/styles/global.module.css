@@ -8,3 +8,14 @@
     color: var(--primary);
     margin-bottom: 0.25rem;
 }
+
+.flexibleList {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.flexibleList > * {
+    margin-right: 1.5rem;
+}

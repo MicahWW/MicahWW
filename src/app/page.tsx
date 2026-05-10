@@ -5,6 +5,7 @@ import degreeModel from "@/models/resume/degreeModel";
 import workExperienceModel from "@/models/resume/workExperienceModel";
 import WorkExperience from "@/components/resume/WorkExperience";
 import skillModel from "@/models/resume/skillModel";
+import Skill from "@/components/resume/Skill";
 import projectModel from "@/models/resume/projectModel";
 import Project from "@/components/resume/Project";
 import gStyles from "@/styles/global.module.css";
@@ -286,42 +287,46 @@ Be the go-to person for in-person troubleshooting on various helpdesk issues. Wi
             <hr />
             <div id="education">
                 <LinkableHeader id="education" title="Education" />
-                <div className={gStyles.itemContainer}>
-                    <div className={gStyles.itemHeader}>Certifications</div>
-                    <ul>
-                        {certifications.map((cert) => (
-                            <li key={`bullet-${cert.name}`}><Certification key={cert.name} cert={cert} /></li>
-                        ))}
-                    </ul>
+                <div className={gStyles.flexibleList}>
+                    <div className={gStyles.itemContainer}>
+                        <div className={gStyles.itemHeader}>Certifications</div>
+                        <ul>
+                            {certifications.map((cert) => (
+                                <li key={`bullet-${cert.name}`}><Certification key={cert.name} cert={cert} /></li>
+                            ))}
+                        </ul>
+                    </div>
+                    <div className={gStyles.itemContainer}>
+                        <div className={gStyles.itemHeader}>Microsoft Applied Skills</div>
+                        <ul>
+                            {msAppliedSkills.map((cert) => (
+                                <li key={`bullet-${cert.name}`}><Certification key={cert.name} cert={cert} /></li>
+                            ))}
+                        </ul>
+                    </div>
+                    <Degree degree={degree} />
                 </div>
-                <div className={gStyles.itemContainer}>
-                    <div className={gStyles.itemHeader}>Microsoft Applied Skills</div>
-                    <ul>
-                        {msAppliedSkills.map((cert) => (
-                            <li key={`bullet-${cert.name}`}><Certification key={cert.name} cert={cert} /></li>
-                        ))}
-                    </ul>
-                </div>
-                <Degree degree={degree} />
             </div>
             <hr />
             <div id="skills">
                 <LinkableHeader id="skills" title="Skills" />
-                <div className={gStyles.itemContainer}>
-                    <div className={gStyles.itemHeader}>Programming Related</div>
-                    <ul>
-                        {skills.filter(skill => skill.type === "programming").map((skill) => (
-                            <li key={`bullet-${skill.name}`}>{skill.name}</li>
-                        ))}
-                    </ul>
-                </div>
-                <div className={gStyles.itemContainer}>
-                    <div className={gStyles.itemHeader}>Other</div>
-                    <ul>
-                        {skills.filter(skill => skill.type === "other").map((skill) => (
-                            <li key={`bullet-${skill.name}`}>{skill.name}</li>
-                        ))}
-                    </ul>
+                <div className={gStyles.flexibleList}>
+                    <div className={gStyles.itemContainer}>
+                        <div className={gStyles.itemHeader}>Programming Related</div>
+                        <ul>
+                            {skills.filter(skill => skill.type === "programming").map((skill) => (
+                                <Skill key={`bullet-${skill.name}`} skill={skill} />
+                            ))}
+                        </ul>
+                    </div>
+                    <div className={gStyles.itemContainer}>
+                        <div className={gStyles.itemHeader}>Other</div>
+                        <ul>
+                            {skills.filter(skill => skill.type === "other").map((skill) => (
+                                <Skill key={`bullet-${skill.name}`} skill={skill} />
+                            ))}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </>
