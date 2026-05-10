@@ -121,7 +121,7 @@ export default function Home() {
                 "Maintain and overhaul existing cloud infrastructure.",
                 "Develop cloud infrastructure solutions in Azure for IT, BI, etc.",
                 "Automate repetitive business processes.",
-                "Plus portions of my role before as It Support Coordinator"
+                "Plus portions of my role before as IT Support Coordinator"
             ],
             null,
             "Frisco, TX"
