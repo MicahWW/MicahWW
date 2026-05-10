@@ -285,7 +285,11 @@ Be the go-to person for in-person troubleshooting on various helpdesk issues. Wi
         <>
             <div id="overview">
                 <LinkableHeader id="welcome" title="Welcome to my page!" />
-                <p>Below you will find my previous <a href="#workExperience">Work Experience</a>, <a href="#projects">Projects</a>, <a href="#education">Education</a>, and <a href="#skills">Skills</a>. Above to will find links to some of my external profiles and the source code to this page.</p>
+                <p>Below you will find an online resume of sorts, it has an <a href="#about">intro about my work</a>, my previous <a href="#workExperience">Work Experience</a>, <a href="#projects">Projects</a>, <a href="#education">Education</a>, and <a href="#skills">Skills</a>. Above to will find links to some of my external profiles and the source code to this page.</p>
+            </div>
+            <div id="about">
+                <LinkableHeader id="about" title="My Work Intro" />
+                <p>At my current position as a Cloud Engineer at the Dallas Stars, I specialize in developing and maintaining solutions with a primary focus on Azure cloud infrastructure. With a strong background in IT support, passion for cloud technologies, and a degree in Computer Engineering from UNT, I have successfully implemented various projects that range from automating repetitive business processes to developing and deploying custom applications, all aimed at leveraging the power of the cloud to meet organizational needs. My career progression from IT Technician to Cloud Engineer has given me a unique perspective on how infrastructure decisions impact end-users, allowing me to build solutions that are both technically sound and operationally practical.</p>
             </div>
             <div id="workExperience">
                 <LinkableHeader id="workExperience" title="Work Experience" />
