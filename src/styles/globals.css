@@ -36,8 +36,10 @@ footer a:visited {
 }
 
 main a:hover,
-footer a:hover {
+footer a:hover,
+summary:hover {
     color: var(--primary);
+    cursor: pointer;
 }
 
 main a:active,
