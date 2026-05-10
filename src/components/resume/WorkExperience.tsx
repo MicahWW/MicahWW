@@ -1,4 +1,5 @@
 import workExperienceModel from '@/models/resume/workExperienceModel';
+import gStyles from '@/styles/global.module.css';
 
 type workExperienceProps = {
     workExperience: workExperienceModel;
@@ -6,8 +7,8 @@ type workExperienceProps = {
 
 const WorkExperience = ({ workExperience }: workExperienceProps) => {
     return (
-        <div>
-            <span className="item-header">{workExperience.jobTitle} - {workExperience.companyName}</span>
+        <div className={gStyles.itemContainer}>
+            <span className={gStyles.itemHeader}>{workExperience.jobTitle} - {workExperience.companyName}</span>
             <span> {workExperience.startDateString()} - {workExperience.endDateString()}</span>
             <div>Quick description:</div>
             <ul>

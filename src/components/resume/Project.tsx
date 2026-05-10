@@ -1,4 +1,5 @@
 import projectModel from "@/models/resume/projectModel";
+import gStyles from "@/styles/global.module.css";
 
 type ProjectProps = {
     project: projectModel;
@@ -6,8 +7,8 @@ type ProjectProps = {
 
 const Project = ({ project }: ProjectProps) => {
     return (
-        <div>
-            <span className="item-header">{project.title}</span>
+        <div className={gStyles.itemContainer}>
+            <span className={gStyles.itemHeader}>{project.title}</span>
             {project.doneFor ? <span> - {project.doneFor}</span> : null}
             <div>{project.description}</div>
             {project.extraPoints && Object.keys(project.extraPoints).length > 0 && (

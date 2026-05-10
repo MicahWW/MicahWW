@@ -52,3 +52,8 @@ footer a:active {
     min-height: calc(100vh - var(--navbar-height));
     padding-top: var(--navbar-height);
 }
+
+ul {
+    margin-inline: 0px;
+    margin-block: 0.5rem;
+}

@@ -7,7 +7,7 @@ import WorkExperience from "@/components/resume/WorkExperience";
 import skillModel from "@/models/resume/skillModel";
 import projectModel from "@/models/resume/projectModel";
 import Project from "@/components/resume/Project";
-import "@/styles/resume.css";
+import gStyles from "@/styles/global.module.css";
 import LinkableHeader from "@/components/LinkableHeader";
 
 export default function Home() {
@@ -280,43 +280,49 @@ Be the go-to person for in-person troubleshooting on various helpdesk issues. Wi
             <div id="projects">
                 <LinkableHeader id="projects" title="Projects" />
                 {projects.map((project) => (
-                    <div key={`project-${project.title}`}>
-                        <Project project={project} />
-                    </div>
+                        <Project key={`project-${project.title}`} project={project} />
                 ))}
             </div>
             <hr />
             <div id="education">
                 <LinkableHeader id="education" title="Education" />
-                <div className="item-header">Certifications</div>
-                <ul>
-                    {certifications.map((cert) => (
-                        <li key={`bullet-${cert.name}`}><Certification key={cert.name} cert={cert} /></li>
-                    ))}
-                </ul>
-                <div className="item-header">Microsoft Applied Skills</div>
-                <ul>
-                    {msAppliedSkills.map((cert) => (
-                        <li key={`bullet-${cert.name}`}><Certification key={cert.name} cert={cert} /></li>
-                    ))}
-                </ul>
+                <div className={gStyles.itemContainer}>
+                    <div className={gStyles.itemHeader}>Certifications</div>
+                    <ul>
+                        {certifications.map((cert) => (
+                            <li key={`bullet-${cert.name}`}><Certification key={cert.name} cert={cert} /></li>
+                        ))}
+                    </ul>
+                </div>
+                <div className={gStyles.itemContainer}>
+                    <div className={gStyles.itemHeader}>Microsoft Applied Skills</div>
+                    <ul>
+                        {msAppliedSkills.map((cert) => (
+                            <li key={`bullet-${cert.name}`}><Certification key={cert.name} cert={cert} /></li>
+                        ))}
+                    </ul>
+                </div>
                 <Degree degree={degree} />
             </div>
             <hr />
             <div id="skills">
                 <LinkableHeader id="skills" title="Skills" />
-                <div className="item-header">Programming Related</div>
-                <ul>
-                    {skills.filter(skill => skill.type === "programming").map((skill) => (
-                        <li key={`bullet-${skill.name}`}>{skill.name}</li>
-                    ))}
-                </ul>
-                <div className="item-header">Other</div>
-                <ul>
-                    {skills.filter(skill => skill.type === "other").map((skill) => (
-                        <li key={`bullet-${skill.name}`}>{skill.name}</li>
-                    ))}
-                </ul>
+                <div className={gStyles.itemContainer}>
+                    <div className={gStyles.itemHeader}>Programming Related</div>
+                    <ul>
+                        {skills.filter(skill => skill.type === "programming").map((skill) => (
+                            <li key={`bullet-${skill.name}`}>{skill.name}</li>
+                        ))}
+                    </ul>
+                </div>
+                <div className={gStyles.itemContainer}>
+                    <div className={gStyles.itemHeader}>Other</div>
+                    <ul>
+                        {skills.filter(skill => skill.type === "other").map((skill) => (
+                            <li key={`bullet-${skill.name}`}>{skill.name}</li>
+                        ))}
+                    </ul>
+                </div>
             </div>
         </>
     );
