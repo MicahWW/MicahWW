@@ -1,5 +1,6 @@
 import skill from "@/models/resume/skillModel";
 import Image from "next/image";
+import gStyles from "@/styles/global.module.css";
 
 type skillProps = {
     skill: skill;
@@ -13,7 +14,7 @@ const Skill = ({ skill }: skillProps) => {
     };
 
     return (
-        <li>{skill.icon && <Image src={`/images/icons/${skill.icon}`} alt={skill.name} width={16} height={16} style={imageStyle} />} {skill.name}</li>
+        <li>{skill.icon && <Image className={gStyles.hiddenInPrint} src={`/images/icons/${skill.icon}`} alt={skill.name} width={16} height={16} style={imageStyle} />} {skill.name}</li>
     );
 }
 

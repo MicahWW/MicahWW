@@ -31,4 +31,8 @@
     font-size: 0.75rem;
     margin: -1.25rem;
     padding-right: 1.25rem;
+
+    @media print {
+        display: none;
+    }
 }
