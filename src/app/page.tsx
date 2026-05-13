@@ -281,6 +281,10 @@ Be the go-to person for in-person troubleshooting on various helpdesk issues. Wi
         new skillModel("Microsoft on-prem AD", "other")
     ];
 
+    certifications.sort((a, b) => b.acquiredDate.getTime() - a.acquiredDate.getTime());
+    msAppliedSkills.sort((a, b) => b.acquiredDate.getTime() - a.acquiredDate.getTime());
+    workExperiences.sort((a, b) => b.startDate.getTime() - a.startDate.getTime());
+
     return (
         <>
             <div id="overview" className={gStyles.hiddenInPrint}>
