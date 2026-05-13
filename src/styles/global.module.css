@@ -3,7 +3,7 @@
 }
 
 .itemHeader {
-    font-size: 1.25rem;
+    font-size: var(--header-two-size);
     font-weight: bold;
     color: var(--primary);
     margin-bottom: 0.25rem;
@@ -17,7 +17,7 @@
 }
 
 .flexibleList > * {
-    margin-right: 1.5rem;
+    margin-right: var(--header-one-size);
 }
 
 .hiddenInPrint {
