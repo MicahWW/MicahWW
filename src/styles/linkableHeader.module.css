@@ -9,6 +9,11 @@
     margin-bottom : 0.5rem;
 }
 
+/* Remove the top margin from the first header to keep it from being too spaced out */
+.linkableHeader + * {
+    margin-top: 0px;
+}
+
 .linkableHeader:hover .linkIcon {
     opacity: 100%;
 }
