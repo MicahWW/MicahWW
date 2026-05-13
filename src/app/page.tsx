@@ -292,6 +292,7 @@ Be the go-to person for in-person troubleshooting on various helpdesk issues. Wi
                 <LinkableHeader id="about" title="My Work Intro" />
                 <p>At my current position as a Cloud Engineer at the Dallas Stars, I specialize in developing and maintaining solutions with a primary focus on Azure cloud infrastructure. With a strong background in IT support, passion for cloud technologies, and a degree in Computer Engineering from UNT, I have successfully implemented various projects that range from automating repetitive business processes to developing and deploying custom applications, all aimed at leveraging the power of the cloud to meet organizational needs. My career progression from IT Technician to Cloud Engineer has given me a unique perspective on how infrastructure decisions impact end-users, allowing me to build solutions that are both technically sound and operationally practical.</p>
             </div>
+            <hr />
             <div id="workExperience">
                 <LinkableHeader id="workExperience" title="Work Experience" />
                 {workExperiences.map((workExperience) => (
