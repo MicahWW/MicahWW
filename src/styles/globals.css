@@ -7,10 +7,18 @@
 }
 
 body {
-    background-color: var(--dark);
-    color: white;
     margin: 0px;
     padding: 0px;
+
+    @media screen {
+        background-color: var(--dark);
+        color: white;
+    }
+
+    @media print {
+        background-color: white;
+        color: black;
+    }
 }
 
 main {
@@ -26,13 +34,27 @@ main * {
 
 main a:link,
 footer a:link {
-    color: white;
-    text-decoration: underline;
+    @media screen {
+        color: white;
+        text-decoration: underline;
+    }
+
+    @media print {
+        color: black;
+    }
+
 }
 
 main a:visited,
 footer a:visited {
-    color: var(--secondary);
+    @media screen {
+        color: var(--secondary);
+    }
+
+    @media print {
+        color: black;
+    }
+
 }
 
 main a:hover,
@@ -51,11 +73,25 @@ footer a:active {
     /* This keeps the footer at the bottom of the page when there is not enough content. */
     display: flex;
     flex-direction: column;
-    min-height: calc(100vh - var(--navbar-height));
-    padding-top: var(--navbar-height);
+
+    @media screen {
+        padding-top: var(--navbar-height);
+        min-height: calc(100vh - var(--navbar-height));
+    }
+
+    @media print {
+        padding-top: 0;
+        min-height: unset;
+    }
 }
 
 ul {
     margin-inline: 0px;
     margin-block: 0.5rem;
+}
+
+@media print {
+    a:any-link {
+        text-decoration: none;
+    }
 }

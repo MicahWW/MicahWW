@@ -283,9 +283,10 @@ Be the go-to person for in-person troubleshooting on various helpdesk issues. Wi
 
     return (
         <>
-            <div id="overview">
+            <div id="overview" className={gStyles.hiddenInPrint}>
                 <LinkableHeader id="welcome" title="Welcome to my page!" />
                 <p>Below you will find an online resume of sorts, it has an <a href="#about">intro about my work</a>, my previous <a href="#workExperience">Work Experience</a>, <a href="#projects">Projects</a>, <a href="#education">Education</a>, and <a href="#skills">Skills</a>. Above to will find links to some of my external profiles and the source code to this page.</p>
+                <p>Also, if you like hard copies it is printer friendly! Go ahead and pull up a print preview and see how it formats for printing!</p>
             </div>
             <div id="about">
                 <LinkableHeader id="about" title="My Work Intro" />

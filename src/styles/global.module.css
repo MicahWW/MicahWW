@@ -19,3 +19,9 @@
 .flexibleList > * {
     margin-right: 1.5rem;
 }
+
+.hiddenInPrint {
+    @media print {
+        display: none;
+    }
+}

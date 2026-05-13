@@ -9,6 +9,9 @@
     overflow: hidden;
     color: var(--secondary);
     border-bottom: 2px solid var(--secondary);
+    @media print {
+        display: none;
+    }
 }
 
 .topNavLink {
