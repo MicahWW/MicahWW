@@ -9,14 +9,23 @@
     margin-bottom: 0.25rem;
 }
 
-.flexibleList {
+.flexibleListStart,
+.flexibleListSpace {
     display: flex;
-    justify-content: flex-start;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
-.flexibleList > * {
+.flexibleListSpace {
+    justify-content: space-around;
+}
+
+.flexibleListStart {
+    justify-content: flex-start;
+}
+
+.flexibleListStart > *,
+.flexibleListSpace > * {
     margin-right: var(--header-one-size);
 }
 
