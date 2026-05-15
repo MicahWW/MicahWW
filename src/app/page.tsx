@@ -264,11 +264,11 @@ Be the go-to person for in-person troubleshooting on various helpdesk issues. Wi
         new skillModel("Azure Container Registries", "azure-service", "azure-container-registries.svg"),
         new skillModel("Azure Virtual Networks", "azure-service", "azure-virtual-networks.svg"),
         new skillModel("Microsoft Entra ID", "azure-service", "entra.svg"),
-new skillModel("Azure Storage Accounts", "azure-service", "azure-storage-accounts.svg"),
+        new skillModel("Azure Storage Accounts", "azure-service", "azure-storage-accounts.svg"),
         new skillModel("Many more Azure services...", "azure-service" ),
         /* No need for over kill but some ideas:
             Key vault
-                        Application Insights
+            Application Insights
             Managed Identity
             ...
         */
@@ -314,7 +314,7 @@ new skillModel("Azure Storage Accounts", "azure-service", "azure-storage-account
             <hr />
             <div id="education">
                 <LinkableHeader id="education" title="Education" />
-                <div className={gStyles.flexibleList}>
+                <div className={gStyles.flexibleListStart}>
                     <div className={gStyles.itemContainer}>
                         <div className={gStyles.itemHeader}>Certifications</div>
                         <ul>
@@ -337,7 +337,7 @@ new skillModel("Azure Storage Accounts", "azure-service", "azure-storage-account
             <hr />
             <div id="skills">
                 <LinkableHeader id="skills" title="Skills" />
-                <div className={gStyles.flexibleList}>
+                <div className={gStyles.flexibleListSpace}>
                     <div className={gStyles.itemContainer}>
                         <div className={gStyles.itemHeader}>Programming Related</div>
                         <ul>
