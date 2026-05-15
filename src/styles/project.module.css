@@ -1,0 +1,22 @@
+.extraPoints {
+    @media (orientation: landscape) {
+        display: flex;
+        justify-content: space-around;
+    }
+    margin-top: 1rem;
+}
+
+.extraPoints > div {
+    @media (orientation: portrait) {
+        width: 100%;
+    }
+
+    @media (orientation: landscape) {
+        width: 45%;
+    }
+}
+
+.extraPointTitle {
+    text-align: left;
+    text-decoration: underline;
+}
