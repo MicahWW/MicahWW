@@ -254,7 +254,7 @@ Be the go-to person for in-person troubleshooting on various helpdesk issues. Wi
         new skillModel("Docker", "programming"),
         new skillModel("SQL", "programming"),
         new skillModel("C#", "programming"),
-        new skillModel("C/C++", "programming"),
+        new skillModel("C & C++", "programming"),
         new skillModel("JavaScript & TypeScript", "programming"),
         new skillModel("HTML & CSS", "programming"),
 
@@ -264,11 +264,11 @@ Be the go-to person for in-person troubleshooting on various helpdesk issues. Wi
         new skillModel("Azure Container Registries", "azure-service", "azure-container-registries.svg"),
         new skillModel("Azure Virtual Networks", "azure-service", "azure-virtual-networks.svg"),
         new skillModel("Microsoft Entra ID", "azure-service", "entra.svg"),
+new skillModel("Azure Storage Accounts", "azure-service", "azure-storage-accounts.svg"),
         new skillModel("Many more Azure services...", "azure-service" ),
         /* No need for over kill but some ideas:
             Key vault
-            Azure Storage
-            Application Insights
+                        Application Insights
             Managed Identity
             ...
         */
@@ -278,7 +278,8 @@ Be the go-to person for in-person troubleshooting on various helpdesk issues. Wi
         new skillModel("Microsoft Intune", "other"),
         new skillModel("Cisco Meraki", "other"),
         new skillModel("Microsoft Power Platform", "other"),
-        new skillModel("Microsoft on-prem AD", "other")
+        new skillModel("Microsoft on-prem AD", "other"),
+        new skillModel("Tableau", "other")
     ];
 
     certifications.sort((a, b) => b.acquiredDate.getTime() - a.acquiredDate.getTime());
