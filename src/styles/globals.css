@@ -4,7 +4,7 @@
     --secondary: #8F8F8C;
     --navbar-height: 50px;
     --footer-height: var(--navbar-height);
---header-one-size: 1.75rem;
+    --header-one-size: 1.75rem;
     --header-two-size: 1.33rem;
     --regular-text-size: 1rem;
     --small-text-size: 0.75rem;
@@ -13,7 +13,7 @@
 body {
     margin: 0px;
     padding: 0px;
-font-size: var(--regular-text-size);
+    font-size: var(--regular-text-size);
 
     @media screen {
         background-color: var(--dark);
@@ -87,6 +87,7 @@ footer a:active {
     @media print {
         padding-top: 0;
         min-height: unset;
+        zoom: 74%;
     }
 }
 
