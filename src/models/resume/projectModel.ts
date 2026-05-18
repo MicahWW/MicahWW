@@ -13,7 +13,7 @@ class projectModel {
     doneFor?: string;
     extraPoints?: { [key: string]: string[] };
 
-    constructor(title: string, description: string, doneFor: string, extraPoints?: { [key: string]: string[] }) {
+    constructor(title: string, description: string, doneFor?: string, extraPoints?: { [key: string]: string[] }) {
         this.title = title;
         this.description = description;
         this.doneFor = doneFor;
