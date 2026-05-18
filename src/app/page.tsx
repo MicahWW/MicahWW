@@ -1,15 +1,7 @@
-import Certification from "@/components/resume/Certification";
-import certificationModel from "@/models/resume/certificationModel";
-import Degree from "@/components/resume/Degree";
-import degreeModel from "@/models/resume/degreeModel";
-import workExperienceModel from "@/models/resume/workExperienceModel";
-import WorkExperience from "@/components/resume/WorkExperience";
-import skillModel from "@/models/resume/skillModel";
-import Skill from "@/components/resume/Skill";
-import projectModel from "@/models/resume/projectModel";
-import Project from "@/components/resume/Project";
-import gStyles from "@/styles/global.module.css";
+import { Certification, Degree, Project, Skill, WorkExperience } from "@/components/Resume";
+import { certificationModel, degreeModel, projectModel, skillModel, workExperienceModel } from "@/models/resume";
 import LinkableHeader from "@/components/LinkableHeader";
+import gStyles from "@/styles/global.module.css";
 
 export default function Home() {
     const certifications: certificationModel[] = [
