@@ -122,7 +122,7 @@ export default function Home() {
         new workExperienceModel(
             "Dallas Stars",
             "IT Support Coordinator",
-            new Date(2022, 6, 1),
+            new Date(2023, 6, 1),
             new Date(2024, 11, 31),
             [
                 "Develop solutions that fit department needs and maintainability/longevity.",
