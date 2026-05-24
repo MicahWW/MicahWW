@@ -91,6 +91,12 @@ export default function Home() {
             new Date(2026, 4, 3),
             null,
             "https://learn.microsoft.com/en-us/users/micah-w-warren/credentials/43f7bab6b0a5ebc"
+        ),
+        new certificationModel(
+            "Secure storage for Azure Files and Azure Blob Storage",
+            new Date(2026, 4, 23),
+            null,
+            "https://learn.microsoft.com/en-us/users/micah-w-warren/credentials/43f7bab6b0a5ebc"
         )
     ];
 
