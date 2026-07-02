@@ -34,6 +34,12 @@ export default function Home() {
             new Date(2026, 2, 16),
             new Date(2028, 2, 16),
             "https://learn.microsoft.com/en-us/users/micah-w-warren/credentials/b1ce9c35ea3b4f69"
+        ),
+        new certificationModel(
+            "GitHub Administration",
+            new Date(2026, 6, 2),
+            new Date(2028, 6, 2),
+            "https://learn.microsoft.com/en-us/users/micah-w-warren/credentials/1772db84e5625b3"
         )
     ];
 
