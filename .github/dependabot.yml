@@ -24,8 +24,7 @@ updates:
       - dependency-name: eslint-config-next
         update-types: [version-update:semver-major]
       - dependency-name: '@types/node'
-        versions:
-          - '25.x'
+        update-types: [version-update:semver-major]
     groups:
       next:
         patterns:
