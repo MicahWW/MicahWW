@@ -40,6 +40,12 @@ export default function Home() {
             new Date(2026, 6, 2),
             new Date(2028, 6, 2),
             "https://learn.microsoft.com/en-us/users/micah-w-warren/credentials/1772db84e5625b3"
+        ),
+        new certificationModel(
+            "Azure Administrator Associate",
+            new Date(2026, 6, 13),
+            new Date(2027, 6, 13),
+            "https://learn.microsoft.com/en-us/users/micah-w-warren/credentials/efd512b4e053be30"
         )
     ];
 
