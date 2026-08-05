@@ -112,7 +112,7 @@ export default function Home() {
         ),
         new certificationModel(
             "Accelerate AI-assisted development by using GitHub Copilot",
-            new Date(2026, 07, 05),
+            new Date(2026, 7, 5),
             null,
             "https://learn.microsoft.com/en-us/users/micah-w-warren/credentials/3898e8064519a858"
         )
