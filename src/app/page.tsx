@@ -109,6 +109,12 @@ export default function Home() {
             new Date(2026, 4, 23),
             null,
             "https://learn.microsoft.com/en-us/users/micah-w-warren/credentials/43f7bab6b0a5ebc"
+        ),
+        new certificationModel(
+            "Accelerate AI-assisted development by using GitHub Copilot",
+            new Date(2026, 07, 05),
+            null,
+            "https://learn.microsoft.com/en-us/users/micah-w-warren/credentials/3898e8064519a858"
         )
     ];
 
