@@ -111,6 +111,12 @@ export default function Home() {
             "https://learn.microsoft.com/en-us/users/micah-w-warren/credentials/43f7bab6b0a5ebc"
         ),
         new certificationModel(
+            "Deploy and configure Azure Monitor",
+            new Date(2026, 6, 10),
+            null,
+            "https://learn.microsoft.com/en-us/users/micah-w-warren/credentials/507611e74cd95320"
+        ),
+        new certificationModel(
             "Accelerate AI-assisted development by using GitHub Copilot",
             new Date(2026, 7, 5),
             null,
