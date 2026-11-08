@@ -2,6 +2,7 @@ name: Generate and push new tag
 
 on:
   workflow_dispatch:
+
 permissions:
   contents: write # required for pushing tags & publishing releases
   id-token: write # required for OIDC authentication

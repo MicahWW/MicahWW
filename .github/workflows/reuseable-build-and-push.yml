@@ -10,13 +10,17 @@ on:
         required: true
         type: string
 
+permissions:
+  contents: read
+  id-token: write # required for OIDC authentication
+
 jobs:
   main:
     runs-on: ubuntu-latest
     environment: production_deploy
     permissions:
-      contents: read #This is required for actions/checkout
-      id-token: write #This is required for requesting the JWT
+      contents: read
+      id-token: write # required for OIDC authentication
 
     steps:
       - name: Login to Azure
