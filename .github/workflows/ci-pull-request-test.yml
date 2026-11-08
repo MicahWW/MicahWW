@@ -27,7 +27,6 @@ jobs:
         cache: 'npm'
         cache-dependency-path: package-lock.json
 
-    # running npm clean-install ensures that package-lock and package match
     - name: Install and check package & package-lock
       run: npm clean-install
 
