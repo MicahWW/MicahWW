@@ -25,7 +25,7 @@ jobs:
 
   build-and-deploy:
     needs: CalVer-Creation
-    uses: ./.github/workflows/Azure-Build-and-Push.yml
+    uses: ./.github/workflows/reuseable-build-and-push.yml
     with:
       version_tag: ${{ needs.CalVer-Creation.outputs.version }}
     secrets: inherit
