@@ -4,5 +4,9 @@
         "DECA",
         "Meraki",
         "TSGS"
-    ]
+    ],
+    "[github-actions-workflow]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+    }
 }
