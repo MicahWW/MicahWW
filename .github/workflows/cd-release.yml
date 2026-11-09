@@ -24,9 +24,33 @@ jobs:
           publish_release: 'true'
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
-  build-and-deploy:
+  build:
     needs: CalVer-Creation
-    uses: ./.github/workflows/reuseable-build-and-push.yml
+    uses: ./.github/workflows/reuseable-build-nextjs.yml
     with:
-      version_tag: ${{ needs.CalVer-Creation.outputs.version }}
-    secrets: inherit
+      node-version: '24'
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment: production
+
+    steps:
+      - name: Download build artifacts
+        uses: actions/download-artifact@v8
+        with:
+          artifact-ids: ${{ needs.build.outputs.artifact-id }}
+
+      - name: Azure Login
+        uses: azure/login@v3
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+      - name: Deploy to Azure Web App
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: ${{ vars.AZURE_WEBAPP_NAME }}
+          slot-name: ${{ vars.AZURE_WEBAPP_SLOT_NAME }}
+          package: .

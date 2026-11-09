@@ -1,0 +1,84 @@
+name: Reusable Build NextJs Standalone Package
+
+on:
+  workflow_call:
+    inputs:
+      node-version:
+        required: true
+        type: string
+        description: 'The version of Node.js to use'
+      set-deployment-id:
+        description: 'If true a deployment ID of the git hash will be set to the environment variable `DEPLOYMENT_ID`'
+        default: false
+        type: boolean
+    outputs:
+      artifact-id:
+        description: 'The ID of the uploaded artifact'
+        value: ${{ jobs.build.outputs.artifact-id }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    outputs:
+      artifact-id: ${{ steps.upload-artifact.outputs.artifact-id }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: ${{ inputs.node-version }}
+          cache: 'npm'
+          cache-dependency-path: package-lock.json
+
+      - name: Install dependencies
+        run: npm clean-install
+
+      - name: Build project
+        run: |
+          if [ "${{ inputs.set-deployment-id }}" = "true" ]; then
+            echo "DEPLOYMENT_ID=$(git rev-parse HEAD)" >> $GITHUB_ENV # not necessary but ensures it is useable in subsequent steps
+            export DEPLOYMENT_ID=$(git rev-parse HEAD)
+          fi
+
+          npm run build
+
+      - name: Validate Next.js standalone output
+        shell: bash
+        run: |
+          if [ ! -d ".next/standalone" ]; then
+            echo "ERROR: .next/standalone was not created. Ensure next.config.js sets output: 'standalone'." >&2
+            exit 1
+          fi
+
+          if [ ! -f ".next/standalone/server.js" ]; then
+            echo "ERROR: .next/standalone/server.js was not created by the Next.js build." >&2
+            exit 1
+          fi
+
+      - name: Run tests
+        run: npm test --if-present
+
+      - name: Create build artifacts
+        run: |
+          # https://nextjs.org/docs/app/api-reference/config/next-config-js/output
+          if [ -d "./public" ]; then
+            cp -r ./public .next/standalone/
+          fi
+
+          if [ -d "./.next/static" ]; then
+            cp -r ./.next/static .next/standalone/.next/
+          fi
+
+      - name: Upload build artifacts
+        id: upload-artifact
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          name: nextjs-standalone
+          path: .next/standalone
+          include-hidden-files: true
+          retention-days: 7
+          if-no-files-found: error
