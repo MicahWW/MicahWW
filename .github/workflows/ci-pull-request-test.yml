@@ -5,6 +5,10 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+  pull-requests: write
+
 jobs:
   install-and-build:
     runs-on: ubuntu-latest
@@ -23,7 +27,6 @@ jobs:
         cache: 'npm'
         cache-dependency-path: package-lock.json
 
-    # running npm clean-install ensures that package-lock and package match
     - name: Install and check package & package-lock
       run: npm clean-install
 
