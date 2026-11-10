@@ -51,6 +51,6 @@ jobs:
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v3
         with:
-          app-name: ${{ vars.AZURE_WEBAPP_NAME }}
-          slot-name: ${{ vars.AZURE_WEBAPP_SLOT_NAME }}
+          app-name: ${{ vars.APP_NAME }}
+          slot-name: ${{ vars.SLOT_NAME }}
           package: .
