@@ -296,6 +296,7 @@ Be the go-to person for in-person troubleshooting on various helpdesk issues. Wi
         new skillModel("Cisco Meraki", "other"),
         new skillModel("Microsoft Power Platform", "other"),
         new skillModel("Microsoft on-prem AD", "other"),
+        new skillModel("Monday.com", "other"),
         new skillModel("Tableau", "other")
     ];
 
