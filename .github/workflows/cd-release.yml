@@ -25,7 +25,6 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
   build:
-    needs: CalVer-Creation
     uses: ./.github/workflows/reuseable-build-nextjs.yml
     with:
       node-version: '24'
