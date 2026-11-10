@@ -270,6 +270,7 @@ Be the go-to person for in-person troubleshooting on various helpdesk issues. Wi
     ];
 
     const skills: skillModel[] = [
+        new skillModel("Terraform", "programming"),
         new skillModel("Python", "programming"),
         new skillModel("PowerShell", "programming"),
         new skillModel("Bash", "programming"),
