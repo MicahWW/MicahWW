@@ -270,6 +270,7 @@ Be the go-to person for in-person troubleshooting on various helpdesk issues. Wi
     ];
 
     const skills: skillModel[] = [
+        new skillModel("Terraform", "programming"),
         new skillModel("Python", "programming"),
         new skillModel("PowerShell", "programming"),
         new skillModel("Bash", "programming"),
@@ -281,19 +282,13 @@ Be the go-to person for in-person troubleshooting on various helpdesk issues. Wi
         new skillModel("HTML & CSS", "programming"),
 
         new skillModel("Azure Functions Apps", "azure-service", "azure-function-apps.svg"),
-        new skillModel("Azure Static Web Apps", "azure-service", "azure-static-apps.svg"),
         new skillModel("Azure Web Apps", "azure-service", "azure-app-services.svg"),
+        new skillModel("Azure Static Web Apps", "azure-service", "azure-static-apps.svg"),
         new skillModel("Azure Container Registries", "azure-service", "azure-container-registries.svg"),
         new skillModel("Azure Virtual Networks", "azure-service", "azure-virtual-networks.svg"),
         new skillModel("Microsoft Entra ID", "azure-service", "entra.svg"),
         new skillModel("Azure Storage Accounts", "azure-service", "azure-storage-accounts.svg"),
         new skillModel("Many more Azure services...", "azure-service" ),
-        /* No need for over kill but some ideas:
-            Key vault
-            Application Insights
-            Managed Identity
-            ...
-        */
 
         new skillModel("Adobe Creative Cloud Suite", "other"),
         new skillModel("Office 365 Administration", "other"),
@@ -301,6 +296,7 @@ Be the go-to person for in-person troubleshooting on various helpdesk issues. Wi
         new skillModel("Cisco Meraki", "other"),
         new skillModel("Microsoft Power Platform", "other"),
         new skillModel("Microsoft on-prem AD", "other"),
+        new skillModel("Monday.com", "other"),
         new skillModel("Tableau", "other")
     ];
 

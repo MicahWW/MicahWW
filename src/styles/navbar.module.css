@@ -35,3 +35,9 @@
     float: right;
     background-color: var(--secondary);
 }
+
+.topNavLinkRight:hover {
+    background-color: var(--primary);
+    outline: 2px solid var(--secondary);
+    outline-offset: -2px;
+}
