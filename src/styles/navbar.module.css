@@ -29,15 +29,17 @@
 
 .topNavLinkLeft:hover {
     background-color: var(--secondary);
+    transition-duration: 0.5s;
 }
 
 .topNavLinkRight {
     float: right;
     background-color: var(--secondary);
+    outline: 2px solid var(--secondary);
+    outline-offset: -2px;
 }
 
 .topNavLinkRight:hover {
     background-color: var(--primary);
-    outline: 2px solid var(--secondary);
-    outline-offset: -2px;
+    transition-duration: 0.5s;
 }
