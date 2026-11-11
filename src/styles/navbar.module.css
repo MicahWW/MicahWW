@@ -20,11 +20,12 @@
     text-decoration: none;
     color: black;
     height: calc(var(--navbar-height) - (14px * 2));
+    bottom: -2px;
+    position: relative;
 }
 
 .topNavLinkLeft {
     float: left;
-    background-color: var(--primary);
 }
 
 .topNavLinkLeft:hover {
@@ -47,13 +48,23 @@
 .dropdown {
     position: fixed;
     top: var(--navbar-height);
-    background-color: var(--secondary);
+    padding-top: 2px;
     z-index: 1000;
     display: flex;
     flex-direction: column;
     width: inherit;
 }
 
-.dropdown > .topNavLink {
+.dropdown > * {
     outline: 0px;
+    position: relative;
+    left: -16px;
+    bottom: 0px;
+}
+
+.dropdown > .topNavLinkLeft {
+    background-color: var(--primary);
+}
+.dropdown > .topNavLinkLeft:hover {
+    background-color: var(--secondary);
 }
